@@ -1,0 +1,17 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: fashion-mnist
+type: kubernetes
+endpoint_name: azure-arc-demo
+app_insights_enabled: true
+model: 
+  name: fashion-mnist-tf
+  version: 1
+  local_path: "./outputs/model/model.h5"
+code_configuration:
+  code: 
+    local_path: .
+  scoring_script: score.py
+instance_type: defaultinstancetype
+environment:
+  conda_file: ./conda.yml
+  image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04:latest

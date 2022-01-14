@@ -1,0 +1,13 @@
+name: test
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - pip
+  - tensorflow
+  - scikit-learn
+  - keras
+  - pip:
+    - azureml-defaults
+    - inference-schema[numpy-support]
