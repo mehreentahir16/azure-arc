@@ -1,0 +1,1 @@
+This repository is for Azure Arc enabled machine learning article series. Read the articles on [Code Project](https://www.codeproject.com/Articles/5323946/Azure-Arc-Machine-Learning-Part-1-Why-Azure-Arc-fo)
